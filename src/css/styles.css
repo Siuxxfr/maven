@@ -1,0 +1,236 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(86, 170, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3a729e;
+}
+
+.hero {
+    background-image: url('../images/concepto-marca-solucion-estrategia-gestion-corporativa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(50vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+main {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+section {
+    padding: 60px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Añadido para centrar contenido */
+}
+
+.area {
+    margin-bottom: 50px;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.imagen {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    text-align: center; /* Centra la imagen horizontalmente */
+    margin-top: 20px; /* Ajusta el espacio superior */
+    margin-bottom: 20px; /* Ajusta el espacio inferior */
+}
+
+.imagen img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px; /* Borde redondeado */
+}
+
+h2 {
+    text-align: center;
+    color: #040158;
+    font-family: 'Montserrat', sans-serif; /* Cambia 'Montserrat' por la fuente que prefieras */
+    font-size: 2.5em; /* Tamaño del texto */
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.areas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.area {
+    text-align: center;
+}
+
+.area h3 {
+    color: #040158;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#sobre-nosotros .content,
+#comunidad .content {
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-around;
+}
+
+#sobre-nosotros .content div,
+#comunidad .content div {
+    max-width: 1000px;
+}
+
+#sobre-nosotros .content img, 
+#comunidad .content img {
+    width: 650px;
+}
+
+#comunidad .content {
+    flex-direction: row-reverse;
+}
+
+#trabaja-con-nosotros .content {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card header h2 {
+    margin-bottom: 0;
+}
+
+.card-content .content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.button-area,
+.card-content .content button {
+    padding: .8rem 1.5rem;
+    font-size: 16px;
+    background: #040158;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: #040158;
+    font-weight: bold;
+}
+
+.card-footer {
+    border-top: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-footer .plan-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: start;
+}
+
+.card-footer .plan-list li {
+    margin-bottom: 10px;
+}
+
+.card-footer .plan-list li::before {
+    content: '✓ ';
+    color: green;
+}
+
+#novedades .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#novedades .content img {
+    width: 450px;
+}
